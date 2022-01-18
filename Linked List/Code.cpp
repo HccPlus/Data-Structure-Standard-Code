@@ -321,12 +321,17 @@ public:
 		//循环遍历链表查找是否存在该数据
 		for (int i = 0; i < num; i++)
 		{
+
 			//如果该结点数据与输入数据相同
 			if (p->dat == dat)
 			{
 				ret = i;
 				break;
 			}
+
+			//访问下一个结点
+			p = p->next;
+
 		}
 
 		return ret;
